@@ -17,6 +17,12 @@ dotenv.config()
  
 app.use(bodyParser.urlencoded({extended: true}))
 
+
+
+app.get("/", (req, res) => {
+    res.send("Welcome to the backend server");
+  });
+
 app.use("/users", userRoute)
 app.use("/userQuerys", userQueryRoute)
 app.use("/collaborates", collaboratesRoute)
