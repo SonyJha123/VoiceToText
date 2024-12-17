@@ -7,6 +7,8 @@ import mongoose from "mongoose"
         console.log("Database connected successfully");
         
     } catch (error) {
+      console.log(error);
+      
         return res.status(400).json({message:" database not connected**"})
     }
   }
