@@ -10,7 +10,7 @@ import collaboratesRoute from "./route/collaboratesRoute.js"
 
 const app = express()
 dotenv.config()
- const port = process.env.port || 8003
+ const port = process.env.PORT || 8003
  app.use(express.json());
  app.use(cors())
 
