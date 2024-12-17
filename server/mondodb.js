@@ -2,7 +2,7 @@ import mongoose from "mongoose"
   
   const connectdb = async (req, res) => {
     try {
-        await mongoose.connect("mongodb://localhost:27017/Voice-Contact")
+        await mongoose.connect("mongodb://0.0.0.0:27017/Voice-Contact")
 
         console.log("Database connected successfully");
         
