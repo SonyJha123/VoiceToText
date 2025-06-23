@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken';
 import cloudinary from "../helpers/cloudinary.js"
 import path from 'path';
 import fs from 'fs';
+console.log('6666666666666666666666666');
 
 
 export const createUser = async (req, res) => {
@@ -43,6 +44,8 @@ export const createUser = async (req, res) => {
         return res.status(400).json({ message: "error"})
     }
 };
+console.log('7777777777777777');
+
 
 
 export const getAllUser = async (req, res) => {

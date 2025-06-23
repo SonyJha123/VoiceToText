@@ -250,31 +250,14 @@ export const getkeywordsbytext=async(req,res)=>{
 }
 
 
+console.log('11111111111111111111111111111111');
 
 
 export const getcollaboratorsbyKeywords=async(req,res)=>{
 
   try{
-
-  //   const {speechText}=req.body;
-  //   if (!speechText || typeof speechText !== "string") {
-  //     return res.status(400).json({ message: "Invalid speech text provided" });
-  // }
-  
-
-    // const keywords = extractKeywords(speechText);
-    // if (!keywords || keywords.length === 0) {
-    //     return res.status(400).json({ message: 'No keywords extracted from speech' });
-    // }
-    // if(keywords){
-    //   res.status(200).json({message:"here is your keywords",keywords})
-    // }
-
     let {keywords}=req.query
     if (!keywords) 
-      
-      
-      
       {
       return res.status(400).json({ message: "Invalid or missing keywords" });
     }
@@ -297,6 +280,8 @@ export const getcollaboratorsbyKeywords=async(req,res)=>{
     return res.status(400).json({message:"no collaborator found"})
   }
 
+  console.log('22222222222');
+  
   
    return res.status(200).json({
       message: 'Collaborators found',

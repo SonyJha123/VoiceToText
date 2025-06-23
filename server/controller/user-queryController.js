@@ -1,5 +1,6 @@
 import userQueryModel from "../model/user-queryModel.js";
 
+console.log('333333333333333333333333');
 
 
 export const createUserQuery = async (req, res,) => {
@@ -63,6 +64,7 @@ export const getUserQueryByUserId = async (req, res, ) => {
 
 }
 
+console.log('444444444444444444444');
 
 
 export const deleteUserQuery = async (req, res, ) => {
